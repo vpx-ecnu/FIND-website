@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <meta name="description"
         content="ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces.">
-  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="keywords" content="Cloth Manipulation, Robotics, PPO">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nerfies: Deformable Neural Radiance Fields</title>
+  <title>ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -384,7 +384,7 @@
             </video>
             <img src="./static/images/vis_9_07031_Tshirt.png" width="80%">
           </div>
-          <p>ClothPPO</p>
+          <p>ClothPPO Final Coverage: 94.0%</p>
           
           <div class="video-block">
             <video id="replay-video-2"
@@ -400,7 +400,7 @@
             </video>
             <img src="./static/images/vis_10_07031_Tshirt.png" width="80%">
           </div>
-          <p>Pre-Train</p>
+          <p>Pre-Train Final Coverage: 54.6%</p>
           <div class="content has-text-centered video-container">
             <div class="video-block">
               <video id="replay-video-1"
@@ -414,9 +414,9 @@
                 <source src="./static/videos/07606_Tshirt_ppo.mp4"
                         type="video/mp4">
               </video>
-              <img src="./static/images/vis_9_07031_Tshirt.png" width="80%">
+              <img src="./static/images/vis_60_07606_Tshirt_clothppo.png" width="80%">
             </div>
-            <p>ClothPPO</p>
+            <p>ClothPPO Final Coverage: 95.2%</p>
             
             <div class="video-block">
               <video id="replay-video-2"
@@ -432,7 +432,7 @@
               </video>
               <img src="./static/images/vis_60_07606_Tshirt.png" width="80%">
             </div>
-            <p>Pre-Train</p>
+            <p>Pre-Train Final Coverage: 65.7%</p>
         </div>
       </div>
       <!--/ Comparing Performance Before and After PPO Training. -->
@@ -443,46 +443,115 @@
           ClothPPO's requisite reward is based on the coverage of the cloth, which is a universal metric applicable to all clothing categories, thereby obviating the need for training individual models for each distinct class of garments.
           Our experiments demonstrate that ClothPPO, even when exclusively trained on the Shirt task, exhibits excellent performance and adaptability across multiple types of clothing. Notably, ClothPPO's ability to retain high-performance metrics across varying garment types indicates a substantial capacity for generalization. This is crucial for practical applications wherein robots may be tasked to handle a wide array of garments.
         </p>
+        <h3 class="title is-5">Pants</h3>
+          <div class="row">
+            <div class="column">
+                <video controls>
+                    <source src="./static/videos/top_05839_Trousers_10_0.884900309154241.mp4" type="video/mp4">
+                </video>
+                <p>Final coverage: 88.49%</p>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="./static/videos/top_06751_Trousers_10_0.8584084293643525.mp4" type="video/mp4">
+                </video>
+                <p>Final coverage: 85.84%</p>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="./static/videos/top_02929_Trousers_10_0.9272284146899225.mp4" type="video/mp4">
+                </video>
+                <p>Final coverage: 92.72%</p>
+            </div>
+            <div class="column">
+                <video controls>
+                    <source src="./static/videos/top_04027_Trousers_10_0.9005032323289487.mp4" type="video/mp4">
+                </video>
+              <p>Final coverage: 90.05%</p>
+            </div>
+          </div> 
+
+        <h3 class="title is-5">Jumpsuit</h3>
+          <div class="row">
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_05798_Jumpsuit_10_0.9800969305633167.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 98.01%</p>
+          </div>
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_04483_Jumpsuit_10_0.9545386374278831.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 95.45%</p>
+          </div>
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_07593_Jumpsuit_10_0.9514204751373468.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 95.14%</p>
+          </div>
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_01667_Jumpsuit_10_0.9552703462792729.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 95.53%</p>
+          </div>
+          </div> 
         <h3 class="title is-5">Skirt</h3>
         <div class="row">
           <div class="column">
-              <video controls>
-                  <source src="./static/videos/top_03350_Skirt_10_0.8976170490170473.mp4" type="video/mp4">
-              </video>
-              <!-- <p>Final coverage: 89.76%</p> -->
+            <video controls>
+              <source src="./static/videos/top_03350_Skirt_10_0.8976170490170473.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 89.76%</p>
           </div>
           <div class="column">
-              <video controls>
-                  <source src="./static/videos/top_06843_Skirt_10_0.8891652592351494.mp4" type="video/mp4" type="video/mp4">
-              </video>
-              <!-- <p>Final coverage: 89.92%</p> -->
+            <video controls>
+              <source src="./static/videos/top_06843_Skirt_10_0.8891652592351494.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 88.92%</p>
           </div>
-        </div>  
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_04602_Skirt_10_0.9304208894777231.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 93.04%</p>
+          </div>
+          <div class="column">
+            <video controls>
+              <source src="./static/videos/top_00067_Skirt_10_0.8965106411568289.mp4" type="video/mp4">
+            </video>
+            <p>Final coverage: 89.65%</p>
+          </div>
+        </div> 
+
         <h3 class="title is-5">Dress</h3>
         <div class="row">
           <div class="column">
               <video controls>
                   <source src="./static/videos/top_03153_Dress_10_0.9822297248877204.mp4" type="video/mp4">
               </video>
-              <!-- <p>Final coverage: 98.22%</p> -->
+              <p>Final coverage: 98.22%</p>
           </div>
           <div class="column">
               <video controls>
-                  <source src="./static/videos/top_04210_Dress_10_0.9674515053044958.mp4" type="video/mp4" type="video/mp4">
+                  <source src="./static/videos/top_04210_Dress_10_0.9674515053044958.mp4" type="video/mp4">
               </video>
-              <!-- <p>Final coverage: 96.75%</p> -->
+              <p>Final coverage: 96.75%</p>
           </div>
-          <!-- <div class="column">
+          <div class="column">
               <video controls>
-                  <source src="./static/videos/top_03153_Dress_10_0.9822297248877204.mp4" type="video/mp4" type="video/mp4">
-              </video> -->
-              <!-- <p>Final coverage: 98.22%</p> -->
+                  <source src="./static/videos/top_07268_Dress_10_0.974917400978548.mp4" type="video/mp4">
+              </video>
+              <p>Final coverage: 97.49%</p>
           </div>
-          <!-- <div class="column">
+          <div class="column">
               <video controls>
-                  <source src="./static/videos/top_03153_Dress_10_0.9822297248877204.mp4" 
-              </video> -->
-              <!-- <p>Final coverage: 98.22%</p> -->
+                  <!-- <source src="./static/videos/top_03584_Dress_10_0.9757145698295111.mp4" type="video/mp4"> -->
+                  <source src="./static/videos/top_03584_Dress_10_0.9499470045902463.mp4" type="video/mp4">
+              </video>
+              <p>Final coverage: 94.99%</p>
           </div>
         </div>  
     <!-- / Animation. -->
