@@ -1,6 +1,6 @@
 # ClothPPO
 
-This is the repository that contains source code for the [FIND website](https://elcarimqaq.github.io/clothppo.github.io/).
+This is the repository that contains source code for the [FIND website](https://vpx-ecnu.github.io/FIND-website/).
 
 <!-- If you find ClothPPO useful for your work please cite:
 ```
