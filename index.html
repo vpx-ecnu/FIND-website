@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces.">
-  <meta name="keywords" content="Cloth Manipulation, Robotics, PPO">
+        content="FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models">
+  <meta name="keywords" content="Multimodal Generation, Diffusion Model, Controllable Generation">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces</title>
+  <title>FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -88,27 +88,35 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces.</h1>
+          <h1 class="title is-1 publication-title">FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://github.com/ElcarimQAQ">Libing Yang</a><sup>1</sup>,</span>
+              <a href="https://github.com/Fradino">Changgu Chen</a>,</span>
             <span class="author-block">
-              <a href="http://ihpdep.github.io/">Yang Li</a><sup>1</sup>,</span>
+              <a href="https://github.com/ElcarimQAQ">Libing Yang</a>,</span>
             <span class="author-block">
-              <a href="https://zjuchenlong.github.io/">Long Chen</a><sup>2</sup>
+              <a href="https://minisal.github.io/photorama/about">Xiaoyan Yang</a>,</span>
+            <span class="author-block">
+              <a href="https://github.com/clgx00">Lianggangxu Chen</a>,</span>
+            <span class="author-block">
+              <a href="https://faculty.ecnu.edu.cn/_s16/hgq2/main.psp">Gaoqi He</a>,</span>
+            <span class="author-block">
+              <a href="https://faculty.ecnu.edu.cn/_s16/wzb/main.psp">Changbo Wang</a>,</span>
+            <span class="author-block">
+              <a href="http://ihpdep.github.io/">Yang Li</a></span>
+            
             </span>
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block"><sup>1</sup>East China Normal University,</span>
-            <span class="author-block"><sup>2</sup>The Hong Kong University of Science and Technology</span>
+            <span class="author-block">East China Normal University,</span>
           </div>
 
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/pdf/2405.04549"
+                <a href="https://arxiv.org/abs/2407.19453"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fas fa-file-pdf"></i>
@@ -117,7 +125,7 @@
                 </a>
               </span>
               <span class="link-block">
-                <a href="https://arxiv.org/abs/2405.04549"
+                <a href="https://arxiv.org/abs/2407.19453"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -166,13 +174,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="./static/videos/vis_122_03165_Tshirt_0.978.mp4"
-                type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        ClothPPO unfold a piece of clothing
-      </h2>
+      <img id="teaser" src="static/find_imgs/fig1_page-0001.jpg" alt="Description of image">
     </div>
   </div>
   <script>
@@ -182,63 +184,6 @@
 </section>
 
 
-<section class="hero is-light is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-steve">
-          <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_62_04726_Tshirt_0.906.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-chair-tp">
-          <video poster="" id="chair-tp" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_167_07606_Tshirt_1.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-shiba">
-          <video poster="" id="shiba" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_75_03165_Tshirt_0.938.mp4"
-
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-fullbody">
-          <video poster="" id="fullbody" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/top_859.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-blueshirt">
-          <video poster="" id="blueshirt" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_37_06084_Tshirt_ppo_0.966.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-mask">
-          <video poster="" id="mask" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_63_00368_Tshirt_0.888.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-coffee">
-          <video poster="" id="coffee" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_55_06443_Tshirt_0.921.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-toby">
-          <video poster="" id="toby" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/vis_121_03165_Tshirt_0.958.mp4"
-                    type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
 <section class="section">
@@ -249,53 +194,20 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Vision-based robotic cloth unfolding has made great progress recently. However, prior works predominantly rely on value learning and have not fully explored policy-based techniques.
-            In this paper, we introduce ClothPPO, a framework that employs a policy gradient algorithm based on actor-critic architecture to enhance a pre-trained model with huge $10^6$ action spaces aligned with observation in the task of unfolding clothes. 
-            To this end, we redefine the cloth manipulation problem as a partially observable Markov decision process.
-            Inspired by advances in reinforcement learning on the large language model, a supervised pre-training stage is employed to train a baseline model of our policy.
-            In the second stage, the modified Proximal Policy Optimization (PPO) is utilized to guide the supervised model within the proposed observation-aligned action space.
-            By optimizing and updating the strategy, our proposed method increases the garment's surface area for cloth unfolding under the soft-body manipulation task. 
-            The experiment shows that our proposed framework can successfully improve the unfolding performance of other methods.
+            In recent years, large-scale pre-trained diffusion models have demonstrated their outstanding capabilities in image and video generation tasks. 
+  However, existing models tend to produce visual objects commonly found in the training dataset, which diverges from user input prompts.
+  The underlying reason behind the inaccurate generated results lies in the model's difficulty in sampling from specific intervals of the initial noise distribution corresponding to the prompt.
+  Moreover, it is challenging to directly optimize the initial distribution, given that the diffusion process involves multiple denoising steps.
+  In this paper, we introduce a Fine-tuning Initial Noise Distribution (FIND) framework with policy optimization, which unleashes the powerful potential of pre-trained diffusion networks by directly optimizing the initial distribution to align the generated contents with user-input prompts.  
+  To this end, we first reformulate the diffusion denoising procedure as a one-step Markov decision process and employ policy optimization to directly optimize the initial distribution. 
+  In addition, a dynamic reward calibration module is proposed to ensure training stability during optimization.
+  Furthermore, we introduce a ratio clipping algorithm to utilize historical data for network training and prevent the optimized distribution from deviating too far from the original policy to restrain excessive optimization magnitudes. 
+  Extensive experiments demonstrate the effectiveness of our method in both text-to-image and text-to-video tasks, surpassing SOTA methods in achieving consistency between prompts and the generated content. Our method achieves 10 times faster than the SOTA approach.
           </p>
-          <!-- <p>
-            Our approach augments neural radiance fields
-            (NeRF) by optimizing an
-            additional continuous volumetric deformation field that warps each observed point into a
-            canonical 5D NeRF.
-            We observe that these NeRF-like deformation fields are prone to local minima, and
-            propose a coarse-to-fine optimization method for coordinate-based models that allows for
-            more robust optimization.
-            By adapting principles from geometry processing and physical simulation to NeRF-like
-            models, we propose an elastic regularization of the deformation field that further
-            improves robustness.
-          </p>
-          <p>
-            We show that <span class="dnerf">Nerfies</span> can turn casually captured selfie
-            photos/videos into deformable NeRF
-            models that allow for photorealistic renderings of the subject from arbitrary
-            viewpoints, which we dub <i>"nerfies"</i>. We evaluate our method by collecting data
-            using a
-            rig with two mobile phones that take time-synchronized photos, yielding train/validation
-            images of the same pose at different viewpoints. We show that our method faithfully
-            reconstructs non-rigidly deforming scenes and reproduces unseen views with high
-            fidelity.
-          </p> -->
         </div>
       </div>
     </div>
-    <!--/ Abstract. -->
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Video</h2>
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
+   
   </div>
 </section>
 
@@ -305,48 +217,16 @@
 
     <div class="columns is-centered">
 
-      <!-- Visual Effects. -->
-      <!-- <div class="column">
-        <div class="content">
-          <h2 class="title is-3">Visual Effects</h2>
-          <p>
-            Using <i>nerfies</i> you can create fun visual effects. This Dolly zoom effect
-            would be impossible without nerfies since it would require going through a wall.
-          </p>
-          <video id="dollyzoom" autoplay controls muted loop playsinline height="100%">
-            <source src="./static/videos/dollyzoom-stacked.mp4"
-                    type="video/mp4">
-          </video>
-        </div> -->
+      
       </div>
-      <!--/ Visual Effects. -->
-
-      <!-- Matting. -->
-      <!-- <div class="column">
-        <h2 class="title is-3">Matting</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
-            </p>
-            <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/top-859.mp4"
-                      type="video/mp4">
-            </video>
-          </div>
-
-        </div>
-      </div>
-    </div> -->
-    <!--/ Matting. -->
+      
 <!-- Overview. -->
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3">Overview</h2>
 
         <div class="content has-text-justified">
-          <img src="static/images/ClothPP0.png" alt="Overview" />
+          <img src="static/find_imgs/fig2_page-0001.jpg" alt="Overview" />
           <!-- <p>
             There's a lot of excellent work that was introduced around the same time as ours.
           </p>
@@ -369,261 +249,91 @@
 
     <div class="columns is-centered">
       <div class="column is-full-width">
-        <h2 class="title is-3">Simulation Experiments</h2>
-        <img src="static/images/result.png" alt="Simulation Experiments" >
+        <h2 class="title is-3">Experiments</h2>
+        <h3 class="title is-4">Quality comparation with SOTA methods</h3>
+        To verify the effectiveness of our method, we conduct both qual-
+itative and quantitative experiments. We compare the proposed
+method with the standard Stable Diffusion v1.5 . Additionally,
+we also compare our approach with state-of-the-art approaches
+DPOK that optimize the entire U-Net using Reinforcement
+Learning to highlight the efficiency and effectiveness of optimizing
+the initial noise. Following the similar setting from DPOK, we
+select four prompts, A green dog is running on the grass, A dog and a
+cat, Four pandas, A dog on the moon, for fair comparison.
+
+        <img src="static/find_imgs/fig4_page-0001.jpg" alt="Simulation Experiments" >
         </p>
-        <!-- Interpolating. -->
-        <!-- <h3 class="title is-4">Interpolating states</h3>
-        <div class="content has-text-justified">
-          <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
-          </p>
-        </div>
-        <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div> -->
+        <h3 class="title is-4">Ablation Study</h3>
+        We conduct ablation studies by utilizing two complex prompts:
+A red book and a yellow vase. and oil portrait of Batman holding
+a picture of Spiderman, intricate, elegant, highly detailed, lighting,
+painting, art station, smooth, illustration, art by Greg Rutkowski and
+Alphonse Mucha. We generate 100 samples for each scenario to
+serve as our test dataset.
+        <img src="static/find_imgs/fig5_page-0001.jpg" alt="Simulation Experiments" >
+        </p>
         <br/>
-        <h3 class="title is-4">Comparing Performance Before and After PPO Training</h3>
-        <div class="content has-text-justified">
-          <p>
-            Within the same task, ClothPPO displays a more significant improvement in coverage at every step. In the final stage of the pre-train model, the coverage stagnates due to the action being void. The pre-training model approaches reliance on the argmax action selection strategy, thereby limiting its exploration of other potential actions. In contrast, ClothPPO manifests a broader scope for action exploration. 
-          </p>
-        </div>
-        <div class="content has-text-centered video-container">
-          <div class="video-block">
-            <video id="replay-video-1"
-                   controls
-                   muted
-                   preload
-                   playsinline
-                   autoplay
-                   loop
-                   width="25%">
-              <source src="./static/videos/longsleeve_9_ppo.mp4"
-                      type="video/mp4">
-            </video>
-            <img src="./static/images/vis_9_07031_Tshirt.png" width="80%">
-          </div>
-          <p>ClothPPO Final Coverage: 94.0%</p>
-          
-          <div class="video-block">
-            <video id="replay-video-2"
-                   controls
-                   muted
-                   preload
-                   playsinline
-                   autoplay
-                   loop
-                   width="25%">
-              <source src="./static/videos/longsleeve_9_funnles_place.mp4"
-                      type="video/mp4">
-            </video>
-            <img src="./static/images/vis_10_07031_Tshirt.png" width="80%">
-          </div>
-          <p>Pre-Train Final Coverage: 54.6%</p>
-          <div class="content has-text-centered video-container">
-            <div class="video-block">
-              <video id="replay-video-1"
-                     controls
-                     muted
-                     preload
-                     playsinline
-                     autoplay
-                     loop
-                     width="25%">
-                <source src="./static/videos/07606_Tshirt_ppo.mp4"
-                        type="video/mp4">
-              </video>
-              <img src="./static/images/vis_60_07606_Tshirt_clothppo.png" width="80%">
-            </div>
-            <p>ClothPPO Final Coverage: 95.2%</p>
-            
-            <div class="video-block">
-              <video id="replay-video-2"
-                     controls
-                     muted
-                     preload
-                     playsinline
-                     autoplay
-                     loop
-                     width="25%">
-                <source src="./static/videos/07606_Tshirt_funnles_place.mp4"
-                        type="video/mp4">
-              </video>
-              <img src="./static/images/vis_60_07606_Tshirt.png" width="80%">
-            </div>
-            <p>Pre-Train Final Coverage: 65.7%</p>
-        </div>
-      </div>
-      <!--/ Comparing Performance Before and After PPO Training. -->
   
-      <h3 class="title is-4">Generalize to Unseen Cloth Types.</h3>
+
+      <h3 class="title is-4">Generalize to Video Diffusions</h3>
       <div class="content has-text-justified">
         <p>
-          ClothPPO's requisite reward is based on the coverage of the cloth, which is a universal metric applicable to all clothing categories, thereby obviating the need for training individual models for each distinct class of garments.
-          Our experiments demonstrate that ClothPPO, even when exclusively trained on the Shirt task, exhibits excellent performance and adaptability across multiple types of clothing. Notably, ClothPPO's ability to retain high-performance metrics across varying garment types indicates a substantial capacity for generalization. This is crucial for practical applications wherein robots may be tasked to handle a wide array of garments.
+          Our approach is theoretically applicable to any diffusion-based
+method, whether it be text-to-image, text-to-video, text-to-3D, and
+so forth. To demonstrate the versatility of our method, we use
+text-to-video as a case study, analyzing its performance both qual-
+itatively and quantitatively. Specifically, we employ ModelScope
+ as our baseline model, which is a large-scale text-to-video dif-
+fusion model trained on large-scale datasets. ViCLIP 
+is a pre-trained model used to evaluate the similarity between text
+and video, which is utilized as our reward function. To verify the effectiveness of our method, we
+selected four sets of prompts that the baseline models struggle
+to generate directly: A green dog is running on the grass., A dog
+is running on the moon., A panda is walking on the grass, from
+left to right. and A monkey is playing guitar. These cover unusual
+colors, displacement control, anomalous positions, and abnormal
+behaviors.
         </p>
         <h3 class="title is-5">Pants</h3>
           <div class="row">
             <div class="column">
-                <video controls>
-                    <source src="./static/videos/top_05839_Trousers_10_0.884900309154241.mp4" type="video/mp4">
-                </video>
-                <p>Final coverage: 88.49%</p>
+              <img src="static/find_videos/green_dog_ori.gif" alt="描述性文本">
             </div>
             <div class="column">
-                <video controls>
-                    <source src="./static/videos/top_06751_Trousers_10_0.8584084293643525.mp4" type="video/mp4">
-                </video>
-                <p>Final coverage: 85.84%</p>
+              <img src="static/find_videos/moon_dog_ori.gif" alt="描述性文本">
             </div>
             <div class="column">
-                <video controls>
-                    <source src="./static/videos/top_02929_Trousers_10_0.9272284146899225.mp4" type="video/mp4">
-                </video>
-                <p>Final coverage: 92.72%</p>
+              <img src="static/find_videos/panda_ori.gif" alt="描述性文本">
             </div>
             <div class="column">
-                <video controls>
-                    <source src="./static/videos/top_04027_Trousers_10_0.9005032323289487.mp4" type="video/mp4">
-                </video>
-              <p>Final coverage: 90.05%</p>
+              <img src="static/find_videos/monkey_ori.gif" alt="描述性文本">
             </div>
           </div> 
 
-        <h3 class="title is-5">Jumpsuit</h3>
+
+
+        <h3 class="title is-5"></h3>
           <div class="row">
           <div class="column">
-            <video controls>
-              <source src="./static/videos/top_05798_Jumpsuit_10_0.9800969305633167.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 98.01%</p>
+            <img src="static/find_videos/green_ours.gif" alt="描述性文本">
+            <p>A green dog is running on the grass</p>
           </div>
           <div class="column">
-            <video controls>
-              <source src="./static/videos/top_04483_Jumpsuit_10_0.9545386374278831.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 95.45%</p>
+            <img src="static/find_videos/moon_ours.gif" alt="描述性文本">
+            <p>A dog is running on the moon</p>
           </div>
           <div class="column">
-            <video controls>
-              <source src="./static/videos/top_07593_Jumpsuit_10_0.9514204751373468.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 95.14%</p>
+            <img src="static/find_videos/panda_ours.gif" alt="描述性文本">
+            <p>A panda is walking on the grass, from left to right</p>
           </div>
           <div class="column">
-            <video controls>
-              <source src="./static/videos/top_01667_Jumpsuit_10_0.9552703462792729.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 95.53%</p>
+            <img src="static/find_videos/monkey_ours.gif" alt="描述性文本">
+            <p>A monkey is playing guitar</p>
           </div>
           </div> 
-        <h3 class="title is-5">Skirt</h3>
-        <div class="row">
-          <div class="column">
-            <video controls>
-              <source src="./static/videos/top_03350_Skirt_10_0.8976170490170473.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 89.76%</p>
-          </div>
-          <div class="column">
-            <video controls>
-              <source src="./static/videos/top_06843_Skirt_10_0.8891652592351494.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 88.92%</p>
-          </div>
-          <div class="column">
-            <video controls>
-              <source src="./static/videos/top_04602_Skirt_10_0.9304208894777231.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 93.04%</p>
-          </div>
-          <div class="column">
-            <video controls>
-              <source src="./static/videos/top_00067_Skirt_10_0.8965106411568289.mp4" type="video/mp4">
-            </video>
-            <p>Final coverage: 89.65%</p>
-          </div>
-        </div> 
 
-        <h3 class="title is-5">Dress</h3>
-        <div class="row">
-          <div class="column">
-              <video controls>
-                  <source src="./static/videos/top_03153_Dress_10_0.9822297248877204.mp4" type="video/mp4">
-              </video>
-              <p>Final coverage: 98.22%</p>
-          </div>
-          <div class="column">
-              <video controls>
-                  <source src="./static/videos/top_04210_Dress_10_0.9674515053044958.mp4" type="video/mp4">
-              </video>
-              <p>Final coverage: 96.75%</p>
-          </div>
-          <div class="column">
-              <video controls>
-                  <source src="./static/videos/top_07268_Dress_10_0.974917400978548.mp4" type="video/mp4">
-              </video>
-              <p>Final coverage: 97.49%</p>
-          </div>
-          <div class="column">
-              <video controls>
-                  <!-- <source src="./static/videos/top_03584_Dress_10_0.9757145698295111.mp4" type="video/mp4"> -->
-                  <source src="./static/videos/top_03584_Dress_10_0.9499470045902463.mp4" type="video/mp4">
-              </video>
-              <p>Final coverage: 94.99%</p>
-          </div>
-        </div>  
-    <!-- / Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
+        
+        
 
   </div>
 </section>
@@ -632,17 +342,16 @@
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
     <h2 class="title">BibTeX</h2>
-    <pre><code>@article{yang2024clothppo,
-  author    = {Libing Yang, Yang Li and Long Chen},
-  title     = {ClothPPO: A Proximal Policy Optimization Enhancing Framework for Robotic Cloth Manipulation with Observation-Aligned Action Spaces},
-  journal   = {IJCAI},
-  year      = {2024}
-}</code></pre>
+    <pre><code>@inproceedings{chen2024find,
+      title={FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models},
+      author={Chen, Changgu and Yang, Libing and Yang, Xiaoyan and Chen, Lianggangxu and He, Gaoqi and Wang, Changbo and Li, Yang},
+      booktitle={ACM Multimedia 2024}
+    }</code></pre>
   </div>
 </section>
 
 
-<footer class="footer">
+<!-- <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">
       <a class="icon-link"
@@ -672,7 +381,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 </body>
 </html>
