@@ -1,4 +1,4 @@
-# ClothPPO
+# FIND: Fine-tuning Initial Noise Distribution with Policy Optimization for Diffusion Models
 
 This is the repository that contains source code for the [FIND website](https://vpx-ecnu.github.io/FIND-website/).
 
